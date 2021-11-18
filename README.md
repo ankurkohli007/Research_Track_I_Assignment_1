@@ -5,9 +5,17 @@ The assignment is based on Pyhton language. Python laguage is an interpreted hig
 
 ### INTRODUCTION
 
-This assignment is based on Python script for achieving the behaviour of robot. This robot is continually drive around the arena in the counter-clockwise (CCW) direction which avoid touching of the golden box. Also, when the robot is close to the silver box or silver box detected in the robot moving path than it should grab that box and move it behind itself.     
+This assignment is based on Python script for achieving the behaviour of robot. This robot continously drive around the arena in the counter-clockwise (CCW) direction which avoid touching of the golden box. Also, when the robot is close to the silver box or silver box detected in the robot moving path than it should grab that box and move it behind itself.     
 
 ### METHODOLOGY
 
-This section will describe the methodology of the assignment such as behaviour of the robot, different functions used, and so on for achieving the goal.
+This section will describe the methodology of the assignment such as behaviour of the robot, different functions used, and so on for achieving the goal. Firstly, pyhton code is developed to define the robot behaviour in a given environment. To detect silver box find_silver_box() is defined and for golden box find_golden_box() is defined. There are enourmous tasks performed by the robot to tour the complete path are as follows:   
+
+###### 1. Robot Drive
+
+This part is to **DRIVE** the robot in the path. To initiate robot motion drive() is defined. There are two motors variable m0 and m1 being declared. When the direction of m0 and m1 should be same. The amount of speed is given to starts the motor in forward (+) or reverse (-) directions. 
+
+###### 2. Robot Turns
+
+This part is to **TURN** the robot while moving in the arena. To initiate robot motion turn() is defined. When the same speed is given 
 
