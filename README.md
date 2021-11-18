@@ -17,5 +17,7 @@ This part is to **DRIVE** the robot in the path. To initiate robot motion drive(
 
 ###### 2. Robot Turns
 
-This part is to **TURN** the robot while moving in the arena. To initiate robot motion turn() is defined. When the same speed is given 
+This part is to **TURN** the robot while moving in the arena. To initiate robot motion turn() is defined. When the same speed is given to motors but with different directions the robot turns.
+
+###### 3. Robot detects silver
 
