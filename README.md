@@ -9,15 +9,17 @@ This assignment is based on Python script for achieving the behaviour of robot. 
 
 ### METHODOLOGY
 
-This section will describe the methodology of the assignment such as behaviour of the robot, different functions used, and so on for achieving the goal. Firstly, pyhton code is developed to define the robot behaviour in a given environment. To detect silver box find_silver_box() is defined and for golden box find_golden_box() is defined. There are enourmous tasks performed by the robot to tour the complete path are as follows:   
+This section will describe the methodology of the assignment such as behaviour of the robot, different functions used, and so on for achieving the goal. Firstly, pyhton code is developed to define the robot behaviour in a given environment. To detect silver box find_silver_box() is defined and for golden box find_gold_box() is defined. There are enourmous tasks performed by the robot to tour the complete path are as follows:   
 
-###### 1. Robot Drive
+###### 1. Robot's drive()
 
-This part is to **DRIVE** the robot in the path. To initiate robot motion drive() is defined. There are two motors variable m0 and m1 being declared. When the direction of m0 and m1 should be same. The amount of speed is given to starts the motor in forward (+) or reverse (-) directions. 
+This function is to **DRIVE** the robot in the path. To initiate robot motion drive() is defined. There are two motors variable m0 and m1 being declared. When the direction of m0 and m1 should be same. The amount of speed is given to starts the motor in forward (+) or reverse (-) directions. 
 
-###### 2. Robot Turns
+###### 2. Robot's turn()
 
-This part is to **TURN** the robot while moving in the arena. To initiate robot motion turn() is defined. When the same speed is given to motors but with different directions the robot turns.
+This function is to **TURN** the robot while moving in the arena. To initiate robot motion turn() is defined. When the same speed is given to motors but with different directions the robot turns.
 
-###### 3. Robot detects silver
+###### 3. Robot's find_silver_box()
+
+This function is used to recognise the silvcer box. In this two arguments **'a'** & **'w'** which stands for angle between the robot and box & width for the visual field, respectively. R.see() is also called in this function which detects the obstacle on robot's path. Two variables dist and rot_y is declared, which detects the distance and position of the silver box.  
 
