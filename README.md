@@ -16,7 +16,7 @@ The assignment is based on Pyhton language. Python laguage is an interpreted hig
 
 This assignment is based on Python script for achieving the behaviour of robot. This robot continously drive around the arena in the counter-clockwise (CCW) direction which avoid touching of the golden box. Also, when the robot is close to the silver box or silver box detected in the robot moving path than it should grab that box and move it behind itself. 
 
-### Problem to solve
+### PROBLEM TO SOLVE
 
 The robot environment for this assignment is the following arena: 
 
@@ -27,7 +27,7 @@ The robot should:
 * avoid touching the walls (golden blocks)
 * when it finds a silver block on its road, it grabs it and moves it behind itself
 
-### Reasoning to solve the problem
+### REASON TO SOLVE THE PROBLEM
 
 First, the robot has to avoid collisions with the walls.
 So the robot has to drive until it's too close to a wall.
@@ -199,13 +199,13 @@ while 1:
 	 grab_silver_box() 
 ```
 
-## Grabbing of Silver Tokens
+## GRABBING OF SILVER TOKEN
 
 ![Alt Text](images/grabsilvertoken.gif)
 
 Above *gif* shows the grabbing of silver tokens.
 
-### Installing and running
+### INSTALLING & RUNNING
 
 The simulator requires a Python 2.7 installation, the [pygame](http://pygame.org/) library, [PyPyBox2D](https://pypi.python.org/pypi/pypybox2d/2.1-r331), and [PyYAML](https://pypi.python.org/pypi/PyYAML/).
 
@@ -215,7 +215,7 @@ Once the dependencies are installed, simply run the new_assignment1.py script wi
 $ python run.py RTassignment1.py
 ```
 
-## Troubleshooting
+## TROUBLESHOOTING
 
 When running `python run.py <file>`, you may be presented with an error: `ImportError: No module named 'robot'`. This may be due to a conflict between sr.tools and sr.robot. To resolve, symlink simulator/sr/robot to the location of sr.tools.
 
@@ -225,20 +225,20 @@ On Ubuntu, this can be accomplished by:
 * Get the location. In my case this was `/usr/local/lib/python2.7/dist-packages`
 * Create symlink: `ln -s path/to/simulator/sr/robot /usr/local/lib/python2.7/dist-packages/sr/`
 
-## Flow Chart of the Task
+## FLOW CHART OF THE TASK
 
 ![alt text](images/RTFlowchartAssignment1.png)
 
 Figure above shows the *Flow Chart* of the task.
 
 
-## Robot Performnace in the given environment 
+## ROBOT PERFORMANCE IN THE GIVEN ENVRIONMENT 
 
 ![Alt Text](images/robotperformance.gif)
 
 Above *gif* shows the Robot Performnace in the given environment.
 
-## Conclusion & Improvements
+## CONCLUSION & IMPROVEMENTS
 
 The robot changes direction when it faces a wall (golden tokens). So when robot is moving in the simulator and putting Silver token behind itself there could be condition when the robot places a token which is very closed to the wall and this will stop robot from collecting the Silver token because the Silver token would be in the threshold we have given to the robot so it dosen't collide with the wall.
 
