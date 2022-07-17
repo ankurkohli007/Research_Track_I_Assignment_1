@@ -225,7 +225,7 @@ On Ubuntu, this can be accomplished by:
 * Get the location. In my case this was `/usr/local/lib/python2.7/dist-packages`
 * Create symlink: `ln -s path/to/simulator/sr/robot /usr/local/lib/python2.7/dist-packages/sr/`
 
-### Flow Chart of the Task
+## Flow Chart of the Task
 
 ![alt text](images/RTFlowchartAssignment1.png)
 
