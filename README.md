@@ -113,7 +113,7 @@ This function is used to recognise the golden box or wall. In this two arguments
 This function robot will avoid the golden wall (which is the significance part of the robot's task). Also, robot look for the left and right side to avoid the collision with the golden wall. When the robot finds which side is better than it turns to that particulr side. It also gives priority to right side as robot detected right side is far away from collision with golden box or wall. Below is the code shows the `avoid_golden` of the robot:
 
 ```python
-    ddef avoid_golden():
+    def avoid_golden():
 #in this function robot will avoid the golden wall (which is the significance part of the robot's task). Also, robot look for the left and right side to avoid the collision with the golden wall. When the robot finds which side is better than it turns to that particulr side.  
 	dist, rot_y = find_gold_box(0, 60)
 	
