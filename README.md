@@ -8,15 +8,15 @@
 
 ***Python Robotics Simulator: This is a simple, portable robot simulator. The objective of this assignemt is to develop a Python code script which is capable to behave correctly inside of a given environment. Additionally, this simulator is developed by [Studnet Robotics](https://studentrobotics.org/)***
 
-### ABSTRACT
+## ABSTRACT
 
 The assignment is based on Pyhton language. Python laguage is an interpreted high-level programming language which is also a general purporsoe programming approach. In this assignment, code is designed to drive an autonomous robot in a given path. A robot is equiped with sensors which can detect boxes around all directions. When robot driving is initiated then robot needs to detect the silver and gold boxes. As the silver box detected in the robot driving path than robot grab that box and place that box to clear it's moving lane and move ahead. If there will be any golden box or boxes detected in the robot moving path than it avoids those box or boxes and find the clear lane to complete journey. In this code there some functions used such as R. see (), R. grab (), R. release (), and so on to perform different functions. 
 
-### INTRODUCTION
+## INTRODUCTION
 
 This assignment is based on Python script for achieving the behaviour of robot. This robot continously drive around the arena in the counter-clockwise (CCW) direction which avoid touching of the golden box. Also, when the robot is close to the silver box or silver box detected in the robot moving path than it should grab that box and move it behind itself. 
 
-### PROBLEM TO SOLVE
+## PROBLEM TO SOLVE
 
 The robot environment for this assignment is the following arena: 
 
@@ -27,7 +27,7 @@ The robot should:
 * avoid touching the walls (golden blocks)
 * when it finds a silver block on its road, it grabs it and moves it behind itself
 
-### REASON TO SOLVE THE PROBLEM
+## REASON TO SOLVE THE PROBLEM
 
 First, the robot has to avoid collisions with the walls.
 So the robot has to drive until it's too close to a wall.
@@ -39,11 +39,11 @@ The first idea is to consider the angle of the nearest golden block, but the rob
 
 So, to improve the algorithm, the robot doesn't control the angle of the wall in front of it, but checks the distances of the wall on the left and the wall on the right. It turns in the direction of the furthest wall. So it makes the curve in the right way. In the figure, the robot finds a closer wall on the left, so it decides to turn right, that's the right direction.
 
-### METHODOLOGY
+## METHODOLOGY
 
 This section will describe the methodology of the assignment such as behaviour of the robot, different functions used, and so on for achieving the goal. Firstly, pyhton code is developed to define the robot behaviour in a given environment. To detect silver box find_silver_box() is defined and for golden box find_gold_box() is defined. There are enourmous tasks performed by the robot to tour the complete path are as follows: 
 
-###### 1. Robot's drive()
+## 1. Robot's drive()
 
 This function is to **DRIVE** the robot in the path. To initiate robot motion drive() is defined. There are two motors variable m0 and m1 being declared. When the direction of m0 and m1 should be same. The amount of speed is given to starts the motor in forward (+) or reverse (-) directions. Below is the code shows the `drive` of the robot:
 
@@ -56,7 +56,7 @@ This function is to **DRIVE** the robot in the path. To initiate robot motion dr
     R.motors[0].m1.power = 0
 ```
 
-###### 2. Robot's turn()
+## 2. Robot's turn()
 
 This function is to **TURN** the robot while moving in the arena. To initiate robot motion turn() is defined. When the same speed is given to motors but with different directions the robot turns. Below is the code shows the `turn` of the robot:
 
@@ -69,7 +69,7 @@ This function is to **TURN** the robot while moving in the arena. To initiate ro
     R.motors[0].m1.power = 0
 ```
 
-###### 3. Robot's find_silver_box()
+## 3. Robot's find_silver_box()
 
 This function is used to recognise the silvcer box. In this two arguments **'a'** & **'w'** which stands for angle between the robot and box & width for the visual field, respectively. R.see() is also called in this function which detects the obstacle on robot's path. Two variables dist and rot_y is declared, which detects the distance and position of the silver box. The value of token.dist compares with the value of dist to check the distance between the robot and the silver box. Also, it checks the type of the whether it is silver or gold and robot moves in the direction towards the silver box if it is in allign with the silver then grabs the silver box. If it returns (-1, -1) it means no silver box is detected on robot's path. Below is the code shows the `find_silver_box` of the robot:
 
@@ -90,7 +90,7 @@ This function is used to recognise the silvcer box. In this two arguments **'a'*
              return dist, rot_y
 ```
 
-###### 4. Robot's find_gold_box()
+## 4. Robot's find_gold_box()
 
 This function is used to recognise the golden box or wall. In this two arguments **'a'** & **'w'** which stands for angle between the robot and box & width for the visual field, respectively. R.see() is also called in this function which detects the obstacle on robot's path. Two variables dist and rot_y is declared, which detects the distance and position of the golden box or wall. The value of token.dist compares with the value of dist to check the distance between the robot and the golden box or wall. Also, it checks the type of the whether it is silver or gold box. If it returns (-1, -1) it means no golden box or wall is detected on robot's path. Below is the code shows the `find_gold_box` of the robot:
 
@@ -108,7 +108,7 @@ This function is used to recognise the golden box or wall. In this two arguments
              return dist, rot_y 
 ```
 
-###### 5. Robot's avoid golden()
+## 5. Robot's avoid golden()
 
 This function robot will avoid the golden wall (which is the significance part of the robot's task). Also, robot look for the left and right side to avoid the collision with the golden wall. When the robot finds which side is better than it turns to that particulr side. It also gives priority to right side as robot detected right side is far away from collision with golden box or wall. Below is the code shows the `avoid_golden` of the robot:
 
@@ -136,7 +136,7 @@ This function robot will avoid the golden wall (which is the significance part o
 	    	   dist, rot_y = find_gold_box(0,15)
 ```
 
-###### 6. Robot's right_primacy()
+## 6. Robot's right_primacy()
 
 It is defined to check the distance between the robot and the golden wall or box to avoid collision. In this function it compares distance on the left and right side to avoid collision. Below is the code shows the `right_primacy` of the robot:
 
@@ -155,7 +155,7 @@ It is defined to check the distance between the robot and the golden wall or box
        return False
 ```
 
-###### 7. Robot's grab_silver_box()
+## 7. Robot's grab_silver_box()
 
 This is defined to detect the silver box, grab it, move behind itseld, and move ahead. When it finds the silver box and robot needs to grab the box. R.grab() is called to grab the Silver Box and it turns to the right side. R.release() is called to release the grabbed silver box and last but not the least robot turns left after move behind & release the silver box. Robot also check the alignment for the silver box such as if the robot is aligned with silver box than it moves ahead and grab it or else it align itself to grab. Below is the code shows the `grab_silver_box` of the robot:
 
@@ -205,7 +205,7 @@ while 1:
 
 Above *gif* shows the grabbing of silver tokens.
 
-### INSTALLING & RUNNING
+## INSTALLING & RUNNING
 
 The simulator requires a Python 2.7 installation, the [pygame](http://pygame.org/) library, [PyPyBox2D](https://pypi.python.org/pypi/pypybox2d/2.1-r331), and [PyYAML](https://pypi.python.org/pypi/PyYAML/).
 
