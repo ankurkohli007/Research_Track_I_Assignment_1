@@ -35,7 +35,9 @@ If this wall is on the left it has to turn right, if this is on the right it has
 How can the robot distinguish a wall on the right from a wall on the left?
 The first idea is to consider the angle of the nearest golden block, but the robot often takes the wrong direction! In the figure, the nearest golden token in front of the robot is on the right, so the robot will turn left, then it will find another wall, it will continue to turn left until it will come back. So the first requisite wouldn't be satisfied! 
 
-![alt text](images/nearestgoldentoken.JPG)
+<p align="center">
+  <img width="800" height="400" src="https://github.com/ankurkohli007/Research_Track_I_Assignment_1/blob/1f895efa3c130dbfc35c44197991ae5dd754bf91/images/nearestgoldentoken.JPG">
+</p>
 
 So, to improve the algorithm, the robot doesn't control the angle of the wall in front of it, but checks the distances of the wall on the left and the wall on the right. It turns in the direction of the furthest wall. So it makes the curve in the right way. In the figure, the robot finds a closer wall on the left, so it decides to turn right, that's the right direction.
 
