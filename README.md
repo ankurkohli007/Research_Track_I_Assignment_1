@@ -256,6 +256,10 @@ Figure above shows the *Flow Chart* of the task.
 
 ![Alt Text](images/robotperformance.gif)
 
+<p align="center">
+    <em>Final Outcome: Robot Performance</em>
+</p>
+
 Above *gif* shows the Robot Performnace in the given environment.
 
 ## CONCLUSION & IMPROVEMENTS
