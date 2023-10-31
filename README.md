@@ -43,6 +43,10 @@ The first idea is to consider the angle of the nearest golden block, but the rob
   <img width="500" height="500" src="https://github.com/ankurkohli007/Research_Track_I_Assignment_1/blob/1f895efa3c130dbfc35c44197991ae5dd754bf91/images/nearestgoldentoken.JPG">
 </p>
 
+<p align="center">
+    <em>Nearest Golden Token</em>
+</p>
+
 So, to improve the algorithm, the robot doesn't control the angle of the wall in front of it, but checks the distances of the wall on the left and the wall on the right. It turns in the direction of the furthest wall. So it makes the curve in the right way. In the figure, the robot finds a closer wall on the left, so it decides to turn right, that's the right direction.
 
 ## METHODOLOGY
