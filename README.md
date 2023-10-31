@@ -22,6 +22,10 @@ The robot environment for this assignment is the following arena:
 
 ![alt text](images/environment.JPG) 
 
+<p align="center">
+    <em>Robot Environment</em>
+</p>
+
 The robot should:
 * move in the circuit in the counter-clockwise direction 
 * avoid touching the walls (golden blocks)
