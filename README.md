@@ -212,7 +212,7 @@ while 1:
 ## GRABBING OF SILVER TOKEN
 
 <p align="center">
-  <img width="500" height="500" src="https://github.com/ankurkohli007/Research_Track_I_Assignment_1/blob/8a468a55c040e1f417fae43178cd2a4f61628a3e/images/grabsilvertoken.gif">
+  <img width="700" height="500" src="https://github.com/ankurkohli007/Research_Track_I_Assignment_1/blob/8a468a55c040e1f417fae43178cd2a4f61628a3e/images/grabsilvertoken.gif">
 </p>
 
 <p align="center">
