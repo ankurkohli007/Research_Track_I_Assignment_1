@@ -254,7 +254,9 @@ Figure above shows the *Flow Chart* of the task.
 
 ## ROBOT PERFORMANCE IN THE GIVEN ENVRIONMENT 
 
-![Alt Text](images/robotperformance.gif)
+<p align="center">
+  <img width="900" height="500" src="https://github.com/ankurkohli007/Research_Track_I_Assignment_1/blob/0611255b53d3ac0c7b585d438f81d85eeac16029/images/robotperformance.gif">
+</p>
 
 <p align="center">
     <em>Final Outcome: Robot Performance</em>
