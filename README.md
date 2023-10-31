@@ -245,6 +245,10 @@ On Ubuntu, this can be accomplished by:
 
 ![alt text](images/RTFlowchartAssignment1.png)
 
+<p align="center">
+    <em>Flow Chart</em>
+</p>
+
 Figure above shows the *Flow Chart* of the task.
 
 
